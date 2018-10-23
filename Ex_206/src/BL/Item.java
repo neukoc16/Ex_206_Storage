@@ -19,4 +19,36 @@ public class Item implements Serializable {
         this.place = place;
     }
 
+    public int getAmount() {
+        return amount;
+    }
+
+    public int getPlace() {
+        return place;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setPlace(int place) {
+        this.place = place;
+    }
+
 }
