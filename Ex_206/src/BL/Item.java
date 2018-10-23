@@ -35,20 +35,4 @@ public class Item implements Serializable {
         return description;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setPlace(int place) {
-        this.place = place;
-    }
-
 }
