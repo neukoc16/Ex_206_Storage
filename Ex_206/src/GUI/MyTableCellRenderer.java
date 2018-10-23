@@ -1,6 +1,6 @@
 package GUI;
 
-import BL.Item;
+import BL.Article;
 import java.awt.Color;
 import java.awt.Component;
 import javax.swing.JLabel;
@@ -14,7 +14,7 @@ public class MyTableCellRenderer implements TableCellRenderer {
     
     @Override
     public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
-        Item i = (Item) value;
+        Article i = (Article) value;
         JLabel label = new JLabel();
         if (i.getAmount() == 0) {
             label.setForeground(Color.red);

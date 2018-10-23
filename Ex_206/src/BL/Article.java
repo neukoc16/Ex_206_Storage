@@ -5,14 +5,14 @@ import java.io.Serializable;
 /**
  * @author Konstantin
  */
-public class Item implements Serializable {
+public class Article implements Serializable {
 
     private int id;
     private String description;
     private int amount;
     private int place;
 
-    public Item(int id, String description, int amount, int place) {
+    public Article(int id, String description, int amount, int place) {
         this.id = id;
         this.description = description;
         this.amount = amount;
