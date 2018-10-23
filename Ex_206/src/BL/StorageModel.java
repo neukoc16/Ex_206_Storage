@@ -9,7 +9,7 @@ import javax.swing.table.AbstractTableModel;
 public class StorageModel extends AbstractTableModel {
 
     private final LinkedList<Item> items = new LinkedList<>();
-    private String colNames[] = {"ID", "Description", "Amount", "Place"};
+    private final String colNames[] = {"ID", "Description", "Amount", "Place"};
 
     @Override
     public int getRowCount() {
