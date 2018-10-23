@@ -11,13 +11,13 @@ import javax.swing.table.TableCellRenderer;
  * @author Konstantin
  */
 public class MyTableCellRenderer implements TableCellRenderer {
-
+    
     @Override
     public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
         Item i = (Item) value;
         JLabel label = new JLabel();
         if (i.getAmount() == 0) {
-            label.setBackground(Color.GRAY);
+            label.setForeground(Color.red);
         }
         if (isSelected) {
             label.setBackground(Color.black);
@@ -41,5 +41,5 @@ public class MyTableCellRenderer implements TableCellRenderer {
         }
         return label;
     }
-
+    
 }
